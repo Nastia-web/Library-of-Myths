@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacts · Library of Myths</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="mist" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <h1>Library of Myths</h1>
+      <p>Myths and legends of the world</p>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Library</a>
+      <a href="contacts.html" class="active">Contacts</a>
+    </nav>
+  </header>
+
+  <main class="contact-wrap">
+    <div class="section-title">
+      <h2>Contact the Keeper</h2>
+      <p>Know a tale the shelves are missing? Send it to us.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Email</h3>
+        <p><a href="mailto:keeper@libraryofmyths.example">keeper@libraryofmyths.example</a></p>
+        <h3>Address</h3>
+        <p>The Reading Room<br>Lantern Street 7, Old Town</p>
+        <h3>Opening hours</h3>
+        <p>Every night, from dusk until the candles burn down.</p>
+      </div>
+
+      <!-- No server: submitting opens the visitor's mail app (see js/main.js) -->
+      <form id="contact-form">
+        <label>Your name
+          <input type="text" name="name" required autocomplete="name">
+        </label>
+        <label>Your email
+          <input type="email" name="email" required autocomplete="email">
+        </label>
+        <label>Your message
+          <textarea name="message" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send message</button>
+        <p class="form-note" id="form-note" role="status"></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">Library of Myths, 2026</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Library of Myths</title>
+  <meta name="description" content="Library of Myths: myths and legends of the world.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="mist" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <h1>Library of Myths</h1>
+      <p>Myths and legends of the world</p>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="active">Library</a>
+      <a href="contacts.html">Contacts</a>
+    </nav>
+  </header>
+
+  <!-- MAIN SCREEN -->
+  <section class="hero">
+    <h2>Enter the Archive of Ancient Tales</h2>
+    <p>Beyond these doors, shelves of forgotten fire, thunder and starlight wait for you. Every scroll holds a story told by candlelight for thousands of years. Choose one and read it.</p>
+    <a href="#myths" class="btn scroll-btn">Explore the myths</a>
+  </section>
+
+  <!-- MYTHS SECTION -->
+  <main id="myths" class="myths">
+    <div class="section-title">
+      <h2>The Shelves</h2>
+      <p>Six tales from six corners of the world</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="grid">
+
+      <!--
+        ================================================================
+        HOW TO ADD A NEW MYTH
+        ----------------------------------------------------------------
+        1. Copy one whole <article class="card"> ... </article> block below.
+        2. Paste it right before the closing </div> of the "grid".
+        3. Edit these parts inside the copy:
+             - <img src="images/yourfile.svg" alt="...">   the card image
+               (put your picture in the "images" folder; .jpg/.png/.svg work)
+             - <h3>        myth title
+             - .culture    the culture or region
+             - .desc       short description shown on the card
+             - .author     author or source
+             - .full-myth  the full text shown in the pop-up window.
+                           Write each paragraph in its own <p>...</p>.
+        4. Leave the class names and the "Read" button unchanged.
+           The pop-up window picks up the new card automatically.
+        To duplicate a myth: repeat steps 1–3. To remove one: delete its block.
+        ================================================================
+      -->
+
+      <!-- MYTH CARD: Prometheus -->
+      <article class="card">
+        <div class="card-img"><img src="images/prometheus.svg" alt="A golden flame in the dark"></div>
+        <div class="card-body">
+          <h3>Prometheus Steals the Fire</h3>
+          <p class="culture">Greek</p>
+          <p class="desc">A Titan defies Zeus to give humankind the gift of fire, and pays for it on a lonely mountain.</p>
+          <p class="author">Author: Hesiod</p>
+          <button class="btn read-btn" type="button">Read</button>
+        </div>
+        <div class="full-myth" hidden>
+          <p>In the first days, humans shivered in caves and ate their meat raw. The Titan Prometheus, whose name means "forethought", pitied them. Zeus had hidden fire away, and he had forbidden anyone to give it to mortals.</p>
+          <p>Prometheus crept to Olympus, lit a hollow fennel stalk at the chariot of the sun, and carried the spark down to the world. Forges glowed, bread baked, and the first cities lit their windows against the night.</p>
+          <p>Zeus's anger shook the sky. He chained Prometheus to a crag in the Caucasus, where an eagle came each day to eat his liver. Each night it grew back. The Titan did not beg for mercy, and in time the hero Heracles broke his chains.</p>
+        </div>
+      </article>
+
+      <!-- MYTH CARD: Ragnarök -->
+      <article class="card">
+        <div class="card-img"><img src="images/ragnarok.svg" alt="A pale moon above dark mountains"></div>
+        <div class="card-body">
+          <h3>Ragnarök, the Twilight of the Gods</h3>
+          <p class="culture">Norse</p>
+          <p class="desc">Winter without end, a wolf that swallows the sun, and a last battle that ends the world to begin it again.</p>
+          <p class="author">Author: Snorri Sturluson</p>
+          <button class="btn read-btn" type="button">Read</button>
+        </div>
+        <div class="full-myth" hidden>
+          <p>First comes Fimbulwinter: three winters with no summer between them. Brothers kill brothers, and the wolves Sköll and Hati catch the sun and the moon and swallow them. The stars go out.</p>
+          <p>The chained wolf Fenrir breaks free, and the serpent Jörmungandr rises from the sea. The ship Naglfar sails with the dead, and the fire giants cross the burning bridge Bifröst.</p>
+          <p>Odin falls to Fenrir, and Thor slays the serpent but dies of its venom. Fire swallows the world and the earth sinks. Then a green land rises from the water, and two humans, Líf and Lífþrasir, walk out of hiding to begin again.</p>
+        </div>
+      </article>
+
+      <!-- MYTH CARD: Osiris -->
+      <article class="card">
+        <div class="card-img"><img src="images/osiris.svg" alt="A golden ankh glowing in the dark"></div>
+        <div class="card-body">
+          <h3>Osiris and the Eternal Night</h3>
+          <p class="culture">Egyptian</p>
+          <p class="desc">A murdered king is gathered piece by piece by his devoted wife and becomes lord of the underworld.</p>
+          <p class="author">Author: Plutarch</p>
+          <button class="btn read-btn" type="button">Read</button>
+        </div>
+        <div class="full-myth" hidden>
+          <p>Osiris ruled Egypt with kindness and taught his people to farm. His brother Set, jealous of the crown, tricked him into a beautifully carved chest, sealed it, and threw it into the Nile.</p>
+          <p>His wife Isis searched the world for him. When she found the body, Set tore it into pieces and scattered them across the land. Isis gathered each piece, and with her sister Nephthys she wrapped the body in linen, the first mummy.</p>
+          <p>She breathed life into him long enough to conceive their son Horus. Osiris descended to rule the Duat, the realm of the dead, where he weighs every heart against a feather. Horus grew up and defeated Set, and the Nile flooded each year in his father's honor.</p>
+        </div>
+      </article>
+
+      <!-- MYTH CARD: Amaterasu -->
+      <article class="card">
+        <div class="card-img"><img src="images/amaterasu.svg" alt="A radiant sun with golden rays"></div>
+        <div class="card-body">
+          <h3>Amaterasu in the Cave</h3>
+          <p class="culture">Japanese</p>
+          <p class="desc">The sun goddess hides from the world, and the other gods must find a way to coax her back into the light.</p>
+          <p class="author">Author: Ō no Yasumaro (Kojiki)</p>
+          <button class="btn read-btn" type="button">Read</button>
+        </div>
+        <div class="full-myth" hidden>
+          <p>After her storm-god brother Susanoo wrecked her rice fields and hurled a flayed horse into her weaving hall, Amaterasu fled into a rock cave and sealed it with a stone. The world went dark and the spirits of mischief ran loose.</p>
+          <p>The gods gathered outside. They hung a mirror and jewels on a tree, and the goddess Ame-no-Uzume danced on an overturned tub until the gods roared with laughter.</p>
+          <p>Amaterasu, curious, opened the stone a crack. Her own face shone back from the mirror. The god of strength pulled the stone away, and light returned to the world. A sacred rope was stretched across the cave so she could never leave again.</p>
+        </div>
+      </article>
+
+      <!-- MYTH CARD: Quetzalcoatl -->
+      <article class="card">
+        <div class="card-img"><img src="images/quetzalcoatl.svg" alt="A green serpent coiled in a spiral"></div>
+        <div class="card-body">
+          <h3>Quetzalcoatl and the Fifth Sun</h3>
+          <p class="culture">Aztec</p>
+          <p class="desc">The feathered serpent descends into the land of the dead to recover the bones from which humanity is made.</p>
+          <p class="author">Author: Bernardino de Sahagún</p>
+          <button class="btn read-btn" type="button">Read</button>
+        </div>
+        <div class="full-myth" hidden>
+          <p>Four suns had lit and ruined the world before. After the last flood, there were no people left. Quetzalcoatl, the feathered serpent, went down to Mictlan, the land of the dead, to ask its lord for the bones of the old humans.</p>
+          <p>The lord of the dead set him tests. He gave Quetzalcoatl a conch with no holes to blow, and the god had worms bore holes in it and bees fill it with sound. Then the lord tried to keep the bones, and Quetzalcoatl fled with them. He fell, and the bones broke, which is why people are of different heights.</p>
+          <p>He carried the fragments to the goddess Cihuacoatl, who ground them like corn. The gods bled onto the meal, and humanity was born under the Fifth Sun.</p>
+        </div>
+      </article>
+
+      <!-- MYTH CARD: Baba Yaga -->
+      <article class="card">
+        <div class="card-img"><img src="images/babayaga.svg" alt="A hut on chicken legs under a pale moon"></div>
+        <div class="card-body">
+          <h3>Vasilisa and Baba Yaga</h3>
+          <p class="culture">Slavic</p>
+          <p class="desc">A girl walks into the forest to fetch fire from a witch whose hut stands on chicken legs.</p>
+          <p class="author">Author: Alexander Afanasyev</p>
+          <button class="btn read-btn" type="button">Read</button>
+        </div>
+        <div class="full-myth" hidden>
+          <p>Vasilisa's cruel stepmother sent her into the forest to borrow light from Baba Yaga. Vasilisa carried a little doll that her dead mother had given her, which fed on crumbs and gave good advice.</p>
+          <p>The witch's hut turned on chicken legs, and its fence was made of bones topped with glowing skulls. Baba Yaga gave her impossible tasks: sort poppy seeds from dirt, clean the house, cook a feast. The doll did the work overnight.</p>
+          <p>Baba Yaga, who could not bear a blessing under her roof, sent the girl away with a skull full of burning coals. Vasilisa carried it home, and when the stepmother and her daughters looked into its eyes, the fire burned them to ash.</p>
+        </div>
+      </article>
+
+      <!-- END OF MYTH CARDS (paste new cards above this line) -->
+    </div>
+  </main>
+
+  <!-- MODAL (shows the full myth; filled in by js/main.js) -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="m-title">
+    <div class="modal-box">
+      <button class="modal-close" type="button" aria-label="Close">&times;</button>
+      <img class="m-img" src="" alt="">
+      <div class="modal-content">
+        <h3 class="m-title" id="m-title"></h3>
+        <p class="meta m-meta"></p>
+        <div class="m-text"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER (fixed at the bottom) -->
+  <footer class="site-footer">Library of Myths, 2026</footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
